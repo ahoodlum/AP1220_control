@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="SPI_controller" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="SPI_controller">
+    <Options/>
+    <Implementation title="SPI_controller" dir="SPI_controller" description="SPI_controller" default_strategy="Strategy1">
+        <Options/>
+        <Source name="SPI_controller.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="SPI_controller1.sty"/>
+</BaliProject>
