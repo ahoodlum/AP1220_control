@@ -1,0 +1,8 @@
+468
+~E 1 "./../../../firmware/AP1220_controller_top.vhd" 5 AP1220_controller_top
+~A 1 "./../../../firmware/AP1220_controller_top.vhd" 25 behavioral
+~E 1 "./../src/TestBench/ap1220_controller_top_TB.vhd" 7 ap1220_controller_top_tb
+~A 1 "./../src/TestBench/ap1220_controller_top_TB.vhd" 10 TB_ARCHITECTURE
+~E 1 "./../../../firmware/shift_reg_16_bit.vhd" 5 shift_reg_16_bit
+~A 1 "./../../../firmware/shift_reg_16_bit.vhd" 16 behavioral
+~C 1 "./../src/TestBench/ap1220_controller_top_TB.vhd" 72 testbench_for_ap1220_controller_top

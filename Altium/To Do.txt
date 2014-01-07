@@ -1,19 +1,8 @@
-add 8 channel i2c adc for current sense and voltage measurement
-
-filter caps on bias outputs?
-
-i2C pullups, optional I2C addressing
-
-5V and ground planes
 
 Voltage Test Points
 
-Headers on top (3M 961 series)
-
 SEIR bias and clock headers
 
-200 uA current sources?
+check connector spacing
 
-extra 4 channels of Bias?
-
-route
+Universal edge connector?

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "SPI_controller_SPI_controller.log"
+-o "SPI_controller_SPI_controller.csv"
+-pr "SPI_controller_SPI_controller.prf"

@@ -1,0 +1,8 @@
+90
+~E 1 "./../../../firmware/shift_reg_16_bit.vhd" 5 shift_reg_16_bit
+~A 1 "./../../../firmware/shift_reg_16_bit.vhd" 16 behavioral
+~E 1 "./../../../firmware/SPI_master.vhd" 5 spi_master
+~A 1 "./../../../firmware/SPI_master.vhd" 19 behavioral
+~E 1 "./../src/TestBench/spi_master_TB.vhd" 7 spi_master_tb
+~A 1 "./../src/TestBench/spi_master_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "./../src/TestBench/spi_master_TB.vhd" 74 testbench_for_spi_master

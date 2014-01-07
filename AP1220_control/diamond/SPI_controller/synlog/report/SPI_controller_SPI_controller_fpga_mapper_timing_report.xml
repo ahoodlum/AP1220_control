@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\SPI_controller\synlog\SPI_controller_SPI_controller_fpga_mapper.srr</data>
+<title>##### START OF TIMING REPORT #####[</title>
+</report_link>
+<row>
+<data>Clock Name</data>
+<data>Req Freq</data>
+<data>Est Freq</data>
+<data>Slack</data>
+</row>
+<row>
+<data>AP1220_controller_top|clk</data>
+<data>1.0 MHz</data>
+<data>62.8 MHz</data>
+<data>492.037</data>
+</row>
+<row>
+<data>AP1220_controller_top|clk_i_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>54.8 MHz</data>
+<data>981.739</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>65.4 MHz</data>
+<data>984.703</data>
+</row>
+</report_table>

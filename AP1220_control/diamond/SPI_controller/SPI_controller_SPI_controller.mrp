@@ -1,0 +1,803 @@
+    Lattice Mapping Report File for Design Module 'AP1220_controller_top'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     SPI_controller_SPI_controller.ngd -o SPI_controller_SPI_controller_map.ncd
+     -pr SPI_controller_SPI_controller.prf -mp SPI_controller_SPI_controller.mrp
+      C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond/
+     SPI_controller.lpf -c 0
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 2.2.0.101
+Mapped on:  11/10/13  23:42:08
+
+Design Summary
+--------------
+
+   Number of registers:    348
+      PFU registers:    338
+      PIO registers:    10
+   Number of SLICEs:           425 out of  3432 (12%)
+      SLICEs(logic/ROM):       389 out of   858 (45%)
+      SLICEs(logic/ROM/RAM):    36 out of  2574 (1%)
+          As RAM:           36 out of  2574 (1%)
+          As Logic/ROM:      0 out of  2574 (0%)
+   Number of logic LUT4s:     601
+   Number of distributed RAM:  36 (72 LUT4s)
+   Number of ripple logic:     80 (160 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:     833
+   Number of PIO sites used: 15 + 4(JTAG) out of 115 (17%)
+   Number of block RAMs:  10 out of 26 (38%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_i_c: 208 loads, 208 rising, 0 falling (Driver: OSCInst0 )
+     Net clk_c: 48 loads, 17 rising, 31 falling (Driver: PIO clk )
+
+                                    Page 1
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  32
+     Net REG.wb_stb_i: 4 loads, 0 LSLICEs
+     Net lm8_inst.LED.genblk3.genblk1.genblk1[0].PIO_DATA9: 4 loads, 0 LSLICEs
+     Net count_32_bite: 16 loads, 16 LSLICEs
+     Net lm8_inst/uart/u_txmitt/un1_thr_wr_1: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_txmitt/un1_tsr_empty5: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_txmitt/tx_state[0]: 10 loads, 10 LSLICEs
+     Net lm8_inst/uart/u_txmitt/tx_state_5_0: 5 loads, 5 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_rbr_rd_1: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/rx_frame_err_RNO: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_cs_state_2_i: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/databit_recved_nume: 6 loads, 6 LSLICEs
+     Net lm8_inst/uart/u_rxcver/rbr20: 7 loads, 7 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_hunt_1: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_cs_state_0_sqmuxa_2_i: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_lsr_rd: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/div_wr_strobe_1_RNIE2VI2: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/thr_nonfifo_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/div_wr_strobe_1_RNIE2VI2_0: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/lcr_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/ier_1_sqmuxa: 2 loads, 2 LSLICEs
+     Net lm8_inst/uart/u_intface/lsr_rd_1: 6 loads, 6 LSLICEs
+     Net lm8_inst/LM8D_ACK_I: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/page_ptr16: 5 loads, 5 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/im_nxt4: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/un1_ie_nxt5: 1 loads, 1
+     LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/addr_cyc: 7 loads, 7 LSLICEs
+     Net lm8_inst/LM8/data_cyc: 6 loads, 6 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un8_zero_flag_nxt_i: 1
+     loads, 1 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_next_address8_1: 1
+     loads, 1 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un8_carry_flag_nxt_i: 1
+     loads, 1 LSLICEs
+     Net lm8_inst/LM8/prom_enable: 18 loads, 2 LSLICEs
+     Net SR_16_0/data_0_sqmuxa: 6 loads, 6 LSLICEs
+   Number of local set/reset loads for net lm8_inst/counter[2] merged into GSR:
+     153
+   Number of LSRs:  6
+     Net rst_c: 7 loads, 7 LSLICEs
+     Net SR_16_0.s_out_1_1: 1 loads, 0 LSLICEs
+     Net lm8_inst/LM8/rst_n: 65 loads, 65 LSLICEs
+     Net lm8_inst/counter[2]: 4 loads, 0 LSLICEs
+     Net SR_16_0/shift_state[0]: 1 loads, 1 LSLICEs
+     Net SR_16_0/rst_count: 17 loads, 17 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net lm8_inst/LM8/first_fetch: 83 loads
+     Net lm8_inst/LM8/rst_n: 68 loads
+     Net lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/addr10_ff: 36 loads
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ret_reg: 35 loads
+     Net N_85: 33 loads
+     Net lm8_inst/uartUART_en: 27 loads
+     Net lm8_inst/LM8/instr_i_0_i[9]: 25 loads
+     Net lm8_inst/LM8/N_249_i: 25 loads
+
+                                    Page 2
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Design Summary (cont)
+---------------------
+     Net lm8_inst/LM8/N_250_i: 25 loads
+     Net lm8_inst/LM8/u1_isp8_core/page_ptr16_1: 25 loads
+
+
+
+
+   Number of warnings:  12
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'lm8_inst/counter[2]' to infer global
+     GSR net.
+WARNING - map: IO buffer missing for top level port miso...logic will be
+     discarded.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_3_1_0' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_0_0_7' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_0_1_6' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_1_0_5' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_1_1_4' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_2_0_3' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_2_1_2' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+
+                                    Page 3
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Design Errors/Warnings (cont)
+-----------------------------
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18124096p1706f143_3_0_1' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMn
+     hscratchpad_initsadn8112048p1765c32e_0_1_0' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMn
+     hscratchpad_initsadn8112048p1765c32e_0_0_1' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| sclk                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[7]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[6]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[5]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[4]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[3]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[2]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[1]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| leds[0]             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| uart_tx             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| uart_rx             | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| s_en                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| mosi                | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+IO (PIO) Attributes (cont)
+--------------------------
+| rst                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block lm8_inst/GND undriven or does not drive anything - clipped.
+Block lm8_inst/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/arbiter/GND undriven or does not drive anything - clipped.
+Block lm8_inst/arbiter/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/GND undriven or does not drive anything -
+     clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi_inst undriven or
+     does not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd undriven or does
+     not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/mem_0_0/RAM1
+     undriven or does not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/VCC undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/VCC undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LED/GND undriven or does not drive anything - clipped.
+Block lm8_inst/LED/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_intface/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_intface/GND undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_rxcver/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_txmitt/VCC undriven or does not drive anything - clipped.
+Signal idx_2_.CN was merged into signal clk_c
+Signal lm8_inst.counter_i[2] was merged into signal lm8_inst/counter[2]
+Signal lm8_inst/LM8/rst_n_i was merged into signal lm8_inst/LM8/rst_n
+Signal lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/wren_inv_g was merged into
+     signal lm8_inst/LM8/prom_enable
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/add_sub_inv was merged
+     into signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/add_sel_i
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/dec0_wre3 was
+     merged into signal
+     lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_nxt9
+Signal lm8_inst/uart/u_txmitt/tx_state_i[0] was merged into signal
+     lm8_inst/uart/u_txmitt/tx_state[0]
+Signal GND undriven or does not drive anything - clipped.
+Signal SR_16_0/VCC undriven or does not drive anything - clipped.
+Signal SR_16_0/GND undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/VCC undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/GND undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/wren_inv undriven or does not
+     drive anything - clipped.
+
+                                    Page 5
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Removed logic (cont)
+--------------------
+Signal lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vlo undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vlo undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vhi undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/VCC undriven or does not drive anything -
+     clipped.
+Signal lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/scuba_vhi undriven or does
+     not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/scuba_vhi undriven or does
+     not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_rxcver/GND undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_txmitt/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal count_32_bit_cry_0_COUT[29] undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_N_75 undriven or does not drive anything - clipped.
+Signal un2_count_32_bit_0_I_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal N_2 undriven or does not drive anything - clipped.
+Signal un2_count_32_bit_0_I_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_21_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_21_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_33_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_33_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_45_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_45_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_57_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_57_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_69_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_69_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_81_0_S1 undriven or does not drive anything -
+
+                                    Page 6
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal un2_count_32_bit_0_I_81_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_93_0_S0 undriven or does not drive anything -
+     clipped.
+Signal un2_count_32_bit_0_I_93_0_COUT undriven or does not drive anything -
+     clipped.
+Signal SR_16_0/un2_shift_count_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal SR_16_0/un2_shift_count_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal SR_16_0/N_1 undriven or does not drive anything - clipped.
+Signal SR_16_0/un2_shift_count_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal SR_16_0/un2_shift_count_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal lm8_inst/LM8/u1_isp8_core/GND undriven or does not drive anything -
+     clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsub_0/S0 undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/S1 undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4d undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/COUT undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4 undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/N_1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_11_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_11_0_COUT
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/N_2 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_COUT
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/mem_0_0/DO2
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/mem_0_0/DO3
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+
+                                    Page 7
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Removed logic (cont)
+--------------------
+Signal lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/N_1 undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_s_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_s_15_0_COUT undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_N_37 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/N_2 undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_COUT undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/uart/u_txmitt/counter_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_txmitt/N_1 undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_txmitt/counter_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_txmitt/counter_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal count_32_bit_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Signal SEDSTDBY undriven or does not drive anything - clipped.
+Block SR_16_0/s_en.CN was optimized away.
+Block lm8_inst/counter_RNI6GF1[2] was optimized away.
+Block lm8_inst/LM8/rst_n_RNI1N8F was optimized away.
+Block lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/AND2_t0 was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/INV_0 was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/LUT4_0 was
+     optimized away.
+Block lm8_inst/uart/u_txmitt/genblk2.genblk1.tx_state_i[0] was optimized away.
+Block GND was optimized away.
+Block SR_16_0/VCC was optimized away.
+Block SR_16_0/GND was optimized away.
+Block lm8_inst/LM8/VCC was optimized away.
+Block lm8_inst/LM8/GND was optimized away.
+Block lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/INV_0 was optimized away.
+Block lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vlo_inst was optimized away.
+Block lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vhi_inst was optimized away.
+Block lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vlo_inst was optimized
+     away.
+
+                                    Page 8
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Removed logic (cont)
+--------------------
+Block lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vhi_inst was optimized
+     away.
+Block lm8_inst/LM8/u1_isp8_core/VCC was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/scuba_vhi_inst was
+     optimized away.
+Block lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/scuba_vhi_inst was
+     optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo_inst was
+     optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/scuba_vhi_inst
+     was optimized away.
+Block lm8_inst/uart/u_rxcver/GND was optimized away.
+Block lm8_inst/uart/u_txmitt/GND was optimized away.
+
+Memory Usage
+------------
+
+/lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom:
+    EBRs: 8
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+
+                                    Page 9
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+Memory Usage (cont)
+-------------------
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H
+/lm8_inst/LM8/genblk4.u1_scratchpad:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8112048p1765c32e_0_1_0:  TYPE=
+         DP8KC,  Width_A= 4,  Depth_A= 2048,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8112048p1765c32e__PMIS__2048__8__8H
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8112048p1765c32e_0_0_1:  TYPE=
+         DP8KC,  Width_A= 4,  Depth_A= 2048,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8112048p1765c32e__PMIS__2048__8__8H
+/lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 1
+    PFU Registers: 0
+/lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 0
+    PFU Registers: 0
+/lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem:
+    EBRs: 0
+    RAM SLICEs: 11
+    Logic SLICEs: 0
+    PFU Registers: 0
+/lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/mem_0_0/RAMW:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+
+
+                                   Page 10
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_i_c
+  OSC Nominal Frequency (MHz):                      88.67
+
+ASIC Components
+---------------
+
+Instance Name: OSCInst0
+         Type: OSCH
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_3_1_0
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_0_0_7
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_0_1_6
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_1_0_5
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_1_1_4
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_2_0_3
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_2_1_2
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18124096p1706f143_3_0_1
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsa
+     dn8112048p1765c32e_0_1_0
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsa
+     dn8112048p1765c32e_0_0_1
+         Type: DP8KC
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'lm8_inst/counter[2]' of the design has been inferred
+        as Global Set Reset (GSR). The reset signal used for GSR control is
+        'lm8_inst/counter[2]'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components on inferred reset domain with GSR Property disabled
+
+                                   Page 11
+
+
+
+
+Design:  AP1220_controller_top                         Date:  11/10/13  23:42:08
+
+GSR Usage (cont)
+----------------
+--------------------------------------------------------------
+
+These components have the GSR property set to DISABLED and are on the inferred
+     reset domain. The components will respond to the reset signal
+     'lm8_inst/counter[2]' via the local reset on the component and not the GSR
+     component.
+
+Type and number of components of the type:
+   Register = 4
+
+Type and instance name of component:
+   Register : Q_0io[3]
+   Register : Q_0io[0]
+   Register : Q_0io[1]
+   Register : Q_0io[2]
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 62 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 12
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor
+     Corporation,  All rights reserved.

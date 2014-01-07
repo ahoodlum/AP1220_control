@@ -1,0 +1,11 @@
+[COMPILESTATUS|.\..\SPI_controller\SPI_controller_SPI_controller_vho.vho]
+FileTimeLow=30334168
+Status=Compiled
+[COMPILESTATUS|.\ap1220_controller_top_TB.vhd]
+FileTimeLow=30334132
+Status=Compiled
+[COMPILESTATUS|.\..\SPI_controller\SPI_controller_SPI_controller_vho.sdf]
+FileTimeLow=30334168
+Status=Modified
+[Gui config]
+RunFor=200 us

@@ -1,0 +1,14 @@
+[Version]
+Version=9.2
+[Designs]
+shift_register_map=shift_register_map.adf
+[Settings]
+Active=shift_register_map
+[Expand]
+shift_register_map=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

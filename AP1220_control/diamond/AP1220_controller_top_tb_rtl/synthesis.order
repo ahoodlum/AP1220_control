@@ -1,0 +1,3 @@
+i<>.\src\TestBench\ap1220_controller_top_TB.vhd
+i<>.\..\..\firmware\shift_reg_16_bit.vhd
+i<>.\..\..\firmware\AP1220_controller_top.vhd

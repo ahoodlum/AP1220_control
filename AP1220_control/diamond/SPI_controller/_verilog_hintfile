@@ -1,0 +1,36 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\bin64\\c_vhdl.exe":1363025804
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\location.map":1363027648
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\std.vhd":1363026182
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1363026182
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\std1164.vhd":1363026182
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\numeric.vhd":1363026182
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1363026182
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\arith.vhd":1363026182
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1363026182
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\AP1220_control\\AP1220_control\\diamond\\..\\firmware\\shift_reg_16_bit.vhd":1384067911
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\AP1220_control\\AP1220_control\\diamond\\..\\firmware\\AP1220_controller_top.vhd":1384154652
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\cpld\\lattice.vhd":1363025956
+#CUR:"C:\\lscc\\diamond\\2.2_x64\\synpbase\\lib\\lucent\\machxo2.vhd":1363025964
+@E8lFkRDCq.u4.Oj_FsM0FCDDsF_0bH
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR0s#RF4
+kk0b0OR#D4	R
+bHMkl0RHR#F4k
+F00bkR#lFH
+R4Fbk0k#0R_RCM4M
+HbRk0k0Ns_RsG4k
+F00bkRskN0G_0RF4
+kk0b0CRD8U#R
+8CMlkF8DlC
+FD8kCER#H_V0s_Co4Ln_HD0
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0#Rs0
+R4HkMb0ER#H_V0#F0sL4CR
+bHMk80RN_0NH4MRnk
+F00bkRF#_k40R
+0FkbRk0#M_CRC4
+MF8l8CkD

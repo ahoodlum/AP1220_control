@@ -1,0 +1,66 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+spi_master_tb=.\spi_master_tb\spi_master_tb.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FAMILY=
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work;
+LibNames=ovi_machxo2;
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+[$LibMap$]
+spi_master_tb=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\..\firmware\shift_reg_16_bit.vhd=-1
+/..\..\..\firmware\SPI_master.vhd=-1
+TestBench/spi_master_TB.vhd=-1
+TestBench/spi_master_TB_runtest.do=-1
+[Files.Data]
+.\..\..\firmware\shift_reg_16_bit.vhd=VHDL Source Code
+.\..\..\firmware\SPI_master.vhd=VHDL Source Code
+.\src\TestBench\spi_master_TB.vhd=VHDL Test Bench
+.\src\TestBench\spi_master_TB_runtest.do=Macro
+[Groups]
+TestBench=1
+[HierarchyViewer]
+HierarchyInformation=spi_master|behavioral|0 spi_master_tb|TB_ARCHITECTURE|0 
+ShowHide=ShowTopLevel
+Selected=

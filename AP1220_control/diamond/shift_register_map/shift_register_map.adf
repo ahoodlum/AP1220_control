@@ -1,0 +1,68 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+shift_register_map=.\shift_register_map\shift_register_map.lib
+work=.\work\work.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work;
+LibNames=ovi_machxo2;
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+shift_register_map=.
+work=.
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[Groups]
+TestBench=1
+
+[sdf.ea.shift_reg_16_bit_tb-TB_ARCHITECTURE]
+0=..\SPI_controller\SPI_controller_SPI_controller_mapvho.sdf| /shift_reg_16_bit_tb/UUT, Average, No
+
+[HierarchyViewer]
+HierarchyInformation=shift_reg_16_bit_tb|TB_ARCHITECTURE|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/..\..\SPI_controller\SPI_controller_SPI_controller_mapvho.vho=-1
+/..\..\SPI_controller\SPI_controller_SPI_controller_mapvho.sdf=-1
+TestBench/shift_reg_16_bit_TB.vhd=-1
+TestBench/shift_reg_16_bit_TB_runtest.do=-1
+
+[Files.Data]
+.\..\SPI_controller\SPI_controller_SPI_controller_mapvho.vho=VHDL Source Code
+.\..\SPI_controller\SPI_controller_SPI_controller_mapvho.sdf=SDF File
+.\src\TestBench\shift_reg_16_bit_TB.vhd=VHDL Test Bench
+.\src\TestBench\shift_reg_16_bit_TB_runtest.do=Macro
+

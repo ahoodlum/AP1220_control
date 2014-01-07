@@ -1,0 +1,30 @@
+# Synospys Constraint Checker(syntax only), version maplat, Build 618R, built Mar 14 2013
+# Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+# Written on Sun Nov 10 23:41:57 2013
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "AP1220_controller_top"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+**************
+
+Start                                          Requested     Requested     Clock        Clock              
+Clock                                          Frequency     Period        Type         Group              
+-----------------------------------------------------------------------------------------------------------
+System                                         1.0 MHz       1000.000      system       system_clkgroup    
+AP1220_controller_top|clk_i_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
+AP1220_controller_top|clk                      1.0 MHz       1000.000      inferred     Inferred_clkgroup_1
+===========================================================================================================

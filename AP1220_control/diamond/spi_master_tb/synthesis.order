@@ -1,0 +1,3 @@
+i<>.\..\..\firmware\shift_reg_16_bit.vhd
+i<>.\..\..\firmware\SPI_master.vhd
+i<>.\src\TestBench\spi_master_TB.vhd

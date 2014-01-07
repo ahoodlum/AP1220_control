@@ -1,0 +1,58 @@
+timestamp=1384062267643
+
+[ap1220_controller_top]
+A/behavioral=21|./../../../firmware/AP1220_controller_top.vhd|25|1*566912
+BinI32/behavioral=3*83801
+I=0*3242
+I/behavioral=0*268573
+M=11|0|va7|1383983340233|./../../../firmware/AP1220_controller_top.vhd|0*2655*0x400f36177f30fcf8024d70e3db7507375eb68527|0*3125*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1384062267526|./../../../firmware/AP1220_controller_top.vhd|0*263353*0xe253fba1228dc26d334d609023f3b024452f4840|0*268442*0x432b901dcee081e54a714d7ef0ab84ef
+R=./../../../firmware/AP1220_controller_top.vhd|5
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[ap1220_controller_top_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./../src/TestBench/ap1220_controller_top_TB.vhd|10|1*562899
+BinI32/tb_architecture=3*82953
+I=0*8689
+I/tb_architecture=I/TB_ARCHITECTURE 0*39945
+M=11|0|va7|1383983340443|./../src/TestBench/ap1220_controller_top_TB.vhd|0*8309*0x55b789e206e9305c83f22a62676046ddeea94b19|0*8567*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|va7|1384062228238|./../src/TestBench/ap1220_controller_top_TB.vhd|0*38748*0xcaa14cd35ebded7d9e025e1733cd2dc3e226257c|0*39804*0x432b901dcee081e54a714d7ef0ab84ef
+R=./../src/TestBench/ap1220_controller_top_TB.vhd|7
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[shift_reg_16_bit]
+A/behavioral=21|./../../../firmware/shift_reg_16_bit.vhd|16|1*550612
+BinI32/behavioral=3*78430
+I=0*774
+I/behavioral=0*12315
+M=11|0|va7|1383983339974|./../../../firmware/shift_reg_16_bit.vhd|0*277*0xe9f082657f56aa93a9987b234731c9bcdfe674d0|0*667*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1384062228135|./../../../firmware/shift_reg_16_bit.vhd|0*11140*0xd821b02a78fc299ad494c968a9f51e7e9de19d14|0*12194*0x432b901dcee081e54a714d7ef0ab84ef
+R=./../../../firmware/shift_reg_16_bit.vhd|5
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[testbench_for_ap1220_controller_top]
+Configures=ap1220_controller_top_tb.TB_ARCHITECTURE
+E=1*566400
+I=0*14510
+M=2|0|va7|1384062228241|./../src/TestBench/ap1220_controller_top_TB.vhd|0*13959*0x5186f5e3383222e5cfc30481fbfc3d50867e6b7e|0*14350*0x432b901dcee081e54a714d7ef0ab84ef
+R=./../src/TestBench/ap1220_controller_top_TB.vhd|72
+Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
+
+[~A]
+ModifyID=468
+Version=73
+
+[~MFT]
+0=341|0work.mgf|268573|256985
+1=173|1work.mgf|566912|560412
+3=148|3work.mgf|83801|81732
+
+[~U]
+ap1220_controller_top=AP1220_controller_top 11|0*2304|
+ap1220_controller_top_tb=11|0*8191|
+shift_reg_16_bit=11|0*0|
+testbench_for_ap1220_controller_top=TESTBENCH_FOR_ap1220_controller_top 2||
+

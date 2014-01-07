@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [AP1220_Control.PrjPcb]
+   Generated File[AP1220_MachXO2_DB.TXT]
+   Generated File[AP1220_MachXO2_DB.LDP]
+   Generated File[AP1220_MachXO2_DB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:56:56 PM On 1/6/2014

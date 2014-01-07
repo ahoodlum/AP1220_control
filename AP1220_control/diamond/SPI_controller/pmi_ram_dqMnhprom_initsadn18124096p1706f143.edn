@@ -1,0 +1,2110 @@
+(edif pmi_ram_dqMnhprom_initsadn18124096p1706f143
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2013 11 10 23 42 8)
+      (program "SCUBA" (version "Diamond_2.2_Production (99)"))))
+      (comment "C:/lscc/diamond/2.2_x64/ispfpga/bin/nt64/scuba -w -bus_exp 7 -bb -arch xo2c00 -type bram -wp 10 -rp 1000 -data_width 18 -num_rows 4096 -gsr DISABLED -write_mode_0 0 -memfile C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/software/UARTTest/Release/prom_init.mem -memformat hex -cascade -1 -n pmi_ram_dqMnhprom_initsadn18124096p1706f143 -pmi ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell AND2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port B
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell FD1P3DX
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port D
+            (direction INPUT))
+          (port SP
+            (direction INPUT))
+          (port CK
+            (direction INPUT))
+          (port CD
+            (direction INPUT))
+          (port Q
+            (direction OUTPUT)))))
+    (cell INV
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell MUX41
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port D0
+            (direction INPUT))
+          (port D1
+            (direction INPUT))
+          (port D2
+            (direction INPUT))
+          (port D3
+            (direction INPUT))
+          (port SD1
+            (direction INPUT))
+          (port SD2
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell VHI
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell DP8KC
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port DIA8
+            (direction INPUT))
+          (port DIA7
+            (direction INPUT))
+          (port DIA6
+            (direction INPUT))
+          (port DIA5
+            (direction INPUT))
+          (port DIA4
+            (direction INPUT))
+          (port DIA3
+            (direction INPUT))
+          (port DIA2
+            (direction INPUT))
+          (port DIA1
+            (direction INPUT))
+          (port DIA0
+            (direction INPUT))
+          (port ADA12
+            (direction INPUT))
+          (port ADA11
+            (direction INPUT))
+          (port ADA10
+            (direction INPUT))
+          (port ADA9
+            (direction INPUT))
+          (port ADA8
+            (direction INPUT))
+          (port ADA7
+            (direction INPUT))
+          (port ADA6
+            (direction INPUT))
+          (port ADA5
+            (direction INPUT))
+          (port ADA4
+            (direction INPUT))
+          (port ADA3
+            (direction INPUT))
+          (port ADA2
+            (direction INPUT))
+          (port ADA1
+            (direction INPUT))
+          (port ADA0
+            (direction INPUT))
+          (port CEA
+            (direction INPUT))
+          (port OCEA
+            (direction INPUT))
+          (port CLKA
+            (direction INPUT))
+          (port WEA
+            (direction INPUT))
+          (port CSA2
+            (direction INPUT))
+          (port CSA1
+            (direction INPUT))
+          (port CSA0
+            (direction INPUT))
+          (port RSTA
+            (direction INPUT))
+          (port DIB8
+            (direction INPUT))
+          (port DIB7
+            (direction INPUT))
+          (port DIB6
+            (direction INPUT))
+          (port DIB5
+            (direction INPUT))
+          (port DIB4
+            (direction INPUT))
+          (port DIB3
+            (direction INPUT))
+          (port DIB2
+            (direction INPUT))
+          (port DIB1
+            (direction INPUT))
+          (port DIB0
+            (direction INPUT))
+          (port ADB12
+            (direction INPUT))
+          (port ADB11
+            (direction INPUT))
+          (port ADB10
+            (direction INPUT))
+          (port ADB9
+            (direction INPUT))
+          (port ADB8
+            (direction INPUT))
+          (port ADB7
+            (direction INPUT))
+          (port ADB6
+            (direction INPUT))
+          (port ADB5
+            (direction INPUT))
+          (port ADB4
+            (direction INPUT))
+          (port ADB3
+            (direction INPUT))
+          (port ADB2
+            (direction INPUT))
+          (port ADB1
+            (direction INPUT))
+          (port ADB0
+            (direction INPUT))
+          (port CEB
+            (direction INPUT))
+          (port OCEB
+            (direction INPUT))
+          (port CLKB
+            (direction INPUT))
+          (port WEB
+            (direction INPUT))
+          (port CSB2
+            (direction INPUT))
+          (port CSB1
+            (direction INPUT))
+          (port CSB0
+            (direction INPUT))
+          (port RSTB
+            (direction INPUT))
+          (port DOA8
+            (direction OUTPUT))
+          (port DOA7
+            (direction OUTPUT))
+          (port DOA6
+            (direction OUTPUT))
+          (port DOA5
+            (direction OUTPUT))
+          (port DOA4
+            (direction OUTPUT))
+          (port DOA3
+            (direction OUTPUT))
+          (port DOA2
+            (direction OUTPUT))
+          (port DOA1
+            (direction OUTPUT))
+          (port DOA0
+            (direction OUTPUT))
+          (port DOB8
+            (direction OUTPUT))
+          (port DOB7
+            (direction OUTPUT))
+          (port DOB6
+            (direction OUTPUT))
+          (port DOB5
+            (direction OUTPUT))
+          (port DOB4
+            (direction OUTPUT))
+          (port DOB3
+            (direction OUTPUT))
+          (port DOB2
+            (direction OUTPUT))
+          (port DOB1
+            (direction OUTPUT))
+          (port DOB0
+            (direction OUTPUT)))))
+    (cell pmi_ram_dqMnhprom_initsadn18124096p1706f143
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Clock
+            (direction INPUT))
+          (port ClockEn
+            (direction INPUT))
+          (port Reset
+            (direction INPUT))
+          (port WE
+            (direction INPUT))
+          (port (array (rename Address "Address(11:0)") 12)
+            (direction INPUT))
+          (port (array (rename Data "Data(17:0)") 18)
+            (direction INPUT))
+          (port (array (rename Q "Q(17:0)") 18)
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance INV_0
+            (viewRef view1 
+              (cellRef INV)))
+          (instance AND2_t0
+            (viewRef view1 
+              (cellRef AND2)))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x0000000000000000000000000000000000000000000000000000000200010CF0000367200010CF00"))
+            (property INITVAL_19
+              (string "0x00267200012CF0000267200012CF0000267200012CF0000267200012CF0000267200012CF0000267"))
+            (property INITVAL_18
+              (string "0x200012CE00200010CD0000366200010CD0000266200012CD0000266200012CD0000266200012CD00"))
+            (property INITVAL_17
+              (string "0x00266200012CD0000266200012CD0000266200012CC0023A1521A052CF0000267200012CF0000267"))
+            (property INITVAL_16
+              (string "0x200012CF0000267200012CF0000267200012CF0000267200012CF0000267200012CF00002672061E"))
+            (property INITVAL_15
+              (string "0x2250303D66200010CD0000366200010CD0000366200010CD0000366200010CD0000366200010CD00"))
+            (property INITVAL_14
+              (string "0x00366200010CD0000366200010CD0303D1C0290C0080000000200071714808022251FA0410000000"))
+            (property INITVAL_13
+              (string "0x06738200052502020F082000100F0820002020A3290403FEF900100014D32904006D38047283F801"))
+            (property INITVAL_12
+              (string "0x200532B10000B280410721100002072110000518020BF290403FEF600000001EE200013EF0000200"))
+            (property INITVAL_11
+              (string "0x0000000F0000600206E80210000600001F7200010000000007200030000004528001000160600E24"))
+            (property INITVAL_10
+              (string "0x215100010A0512001E1002D0A220002122824018032082151020000210282401723100014032000B"))
+            (property INITVAL_0F
+              (string "0x0082A010372710000F180200A0103727100011180203A0110100F082000D2301020F082000100F08"))
+            (property INITVAL_0E
+              (string "0x2000221000304B3065000E22E20008041003A4002000A2DD48081E900273001E60EECA2B05000889"))
+            (property INITVAL_0D
+              (string "0x3108000A09002040101002008200180E0010001B2010020C0E0650005D002CD48081FF1EC002000F"))
+            (property INITVAL_0C
+              (string "0x321480810000300001D500293200640028823F20001011118010F882B05001B36330902B050026B4"))
+            (property INITVAL_0B
+              (string "0x2B050016180600806406062A7350D6350A02B050211580A01C20020201480802E2000033D4808100"))
+            (property INITVAL_0A
+              (string "0x003FF1E20020019389480810000BA804528202001E5CA3A1F700F08200012B0502AF583720221101"))
+            (property INITVAL_09
+              (string "0x000F3175C01F60721100003580A1572B1CA23520003003E8AA360FD00F08200012B0502AF583B70A"))
+            (property INITVAL_08
+              (string "0x220012009A340FE00F08200012B0502AF58067EC06825066063E231008020360826451060873114A"))
+            (property INITVAL_07
+              (string "0x310802E0903EB0000500009480812623F200010103F202E090234002631F240002021F2417012118"))
+            (property INITVAL_06
+              (string "0x0013C23F200010103F202E09022C0028F1F240002021F2417012114001A401918020080002D29040"))
+            (property INITVAL_05
+              (string "0x200053FEE72BF000088C2904023F200010103F202A058218002DF1F240002021F241500B10A0017A"))
+            (property INITVAL_04
+              (string "0x23F200010103F202A0582100030B1F240002021F241500B1060019023F200010103F202A05820800"))
+            (property INITVAL_03
+              (string "0x3DA0C0110013748081FF1F8002000A1974808100003F43FF7010005060572B1E42B0502E08029040"))
+            (property INITVAL_02
+              (string "0x3771F240002021F2417010112001C623F200010103F202E080220003A31F240002021F241701010E"))
+            (property INITVAL_01
+              (string "0x0002E01808000D629040200013FEF6001000130E290403EC000AF582000108A572B1701011802008"))
+            (property INITVAL_00
+              (string "0x000F2290403FEF700000200EF37CAD3BC04382052000020EFC3F3000030600B010062C201010588F"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b000"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000001C80EC562EA760AD750EC562EE76"))
+            (property INITVAL_19
+              (string "0x0AD780EC562F0760AD790EC562F2760AD7A0EC562F4760AD7B0EC562F6760AD7C0EC562F8760AD7D"))
+            (property INITVAL_18
+              (string "0x0EC562FBC80EC562EA760AD750EC562EE760AD780EC562F0760AD790EC562F2760AD7A0EC562F476"))
+            (property INITVAL_17
+              (string "0x0AD7B0EC562F6760AD7C0EC562F8760AD7D0EC562FBD02EF772ED762E8760AD740EC562FE760AD7F"))
+            (property INITVAL_16
+              (string "0x0EC562FC760AD7E0EC562E6760AD730EC562E4760AD720EC562E2760AD710EC562E0760AD7012C96"))
+            (property INITVAL_15
+              (string "0x38E94129740EC562E8760AD7F0EC562FE760AD7E0EC562FC760AD730EC562E6760AD720EC562E476"))
+            (property INITVAL_14
+              (string "0x0AD710EC562E2760AD700EC562E09612D772EF762EDC8391C80E8543808610D7710D8726A8512085"))
+            (property INITVAL_13
+              (string "0x2E0860E653106832E4860E0502E4860E05010FC010C860E854390740A9C010C862E4862E48630F38"))
+            (property INITVAL_12
+              (string "0x1317810C750AA8510B7210C700A17210C700A083107C010C860E854391C8391DF060103BE3102280"))
+            (property INITVAL_11
+              (string "0x100803011131111122913011031110391DF06010100801018022188221C82E086120720A58032110"))
+            (property INITVAL_10
+              (string "0x2E2860E25010280301902217110C710A08110180321102E286122710A0811017010C710A3D80E251"))
+            (property INITVAL_0F
+              (string "0x3B1882017010C730A683107802017010C730A68310788200902E0860E050100802E4860E0502E486"))
+            (property INITVAL_0E
+              (string "0x0E050102813BFC01209038090121C0120903BFC80E8543808610DDF0A3472C1DF2C1C0100803B1C0"))
+            (property INITVAL_0D
+              (string "0x100803B188223802008030100120A01009712380222A12C36012A95130983808610C740A9C80E854"))
+            (property INITVAL_0C
+              (string "0x3806608C9612C901218F22FC01209012FC72E2860E451104812E286100803B1C710281100803B1C7"))
+            (property INITVAL_0B
+              (string "0x100803B18822180221802217010DC0102811008038E8010098130991328A1149512A973806608C96"))
+            (property INITVAL_0A
+              (string "0x12C740A9C80E8543806608C9612DDF2E686124921277110C912FA860E050100802F8863BF7110C90"))
+            (property INITVAL_09
+              (string "0x120912E6861277C10C700A0801017B10DDF2E486124911257110C912F6860E050100802F4863BF7D"))
+            (property INITVAL_08
+              (string "0x10C911217010C902F4860E050100802F2863B18F22180221D831F103119030100121802217010DC0"))
+            (property INITVAL_07
+              (string "0x102811008013A750AA780B088111C72E2860E4512E286100801229238F7110C720A37110C8010091"))
+            (property INITVAL_06
+              (string "0x125C72E2860E4512E286100801229238F7110C720A37110C8010091125C01228510A87113C10CC46"))
+            (property INITVAL_05
+              (string "0x12C960E8543BE740A9C110C862E2860E4512E286100801229238F7110C720A37110C8010091125C7"))
+            (property INITVAL_04
+              (string "0x2E2860E4512E286100801229238F7110C720A37110C8010091125C72E2860E4512E2861008012292"))
+            (property INITVAL_03
+              (string "0x3809110A853828610C740A9C80E8543826608C9612DDF38080101802237110DC0102811008010A85"))
+            (property INITVAL_02
+              (string "0x38F7110C720A37110C8010091125C72E2860E4512E286100801229238F7110C720A37110C8010091"))
+            (property INITVAL_01
+              (string "0x125C112287111C10CC4612C960E854390740A9C110C8631F102E0860EA553837110C801008510A87"))
+            (property INITVAL_00
+              (string "0x111C110C860E8543A1D811A9E13C9F13F603816012A95128943BE760A170301163111012096121D9"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b000"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_06
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_05
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_04
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_03
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_02
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_01
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_00
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b001"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_06
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_05
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_04
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_03
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_02
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_01
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_00
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b001"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_06
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_05
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_04
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_03
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_02
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_01
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_00
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b010"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_06
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_05
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_04
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_03
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_02
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_01
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_00
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b010"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_06
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_05
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_04
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_03
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_02
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_01
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_00
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b011"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance scuba_vhi_inst
+            (viewRef view1 
+              (cellRef VHI)))
+          (instance pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0
+            (viewRef view1 
+              (cellRef DP8KC))
+            (property INIT_DATA
+              (string "STATIC"))
+            (property ASYNC_RESET_RELEASE
+              (string "SYNC"))
+            (property MEM_LPC_FILE
+              (string "pmi_ram_dqMnhprom_initsadn18124096p1706f143__PMIS__4096__18__18H"))
+            (property MEM_INIT_FILE
+              (string "prom_init.mem"))
+            (property INITVAL_1F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_1A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_19
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_18
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_17
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_16
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_15
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_14
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_13
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_12
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_11
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_10
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0F
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0E
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0D
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0C
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0B
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_0A
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_09
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_08
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_07
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_06
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_05
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_04
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_03
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_02
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_01
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property INITVAL_00
+              (string "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000"))
+            (property CSDECODE_B
+              (string "0b111"))
+            (property CSDECODE_A
+              (string "0b011"))
+            (property WRITEMODE_B
+              (string "NORMAL"))
+            (property WRITEMODE_A
+              (string "NORMAL"))
+            (property GSR
+              (string "ENABLED"))
+            (property RESETMODE
+              (string "ASYNC"))
+            (property REGMODE_B
+              (string "NOREG"))
+            (property REGMODE_A
+              (string "NOREG"))
+            (property DATA_WIDTH_B
+              (string "9"))
+            (property DATA_WIDTH_A
+              (string "9")))
+          (instance FF_1
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance FF_0
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance mux_17
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_16
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_15
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_14
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_13
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_12
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_11
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_10
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_9
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_8
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_7
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_6
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_5
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_4
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_3
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_2
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_1
+            (viewRef view1 
+              (cellRef MUX41)))
+          (instance mux_0
+            (viewRef view1 
+              (cellRef MUX41)))
+          (net wren_inv
+            (joined
+              (portRef A (instanceRef AND2_t0))
+              (portRef Z (instanceRef INV_0))))
+          (net scuba_vhi
+            (joined
+              (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef OCEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CSB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CSA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CSB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CSB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef RSTB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef WEB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CLKB (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef ADB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef DIB0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CD (instanceRef FF_1))
+              (portRef CD (instanceRef FF_0))))
+          (net wren_inv_g
+            (joined
+              (portRef SP (instanceRef FF_0))
+              (portRef Z (instanceRef AND2_t0))
+              (portRef SP (instanceRef FF_1))))
+          (net mdout0_3_0
+            (joined
+              (portRef D3 (instanceRef mux_17))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_0
+            (joined
+              (portRef D2 (instanceRef mux_17))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_0
+            (joined
+              (portRef D1 (instanceRef mux_17))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_0
+            (joined
+              (portRef D0 (instanceRef mux_17))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_1
+            (joined
+              (portRef D3 (instanceRef mux_16))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_1
+            (joined
+              (portRef D2 (instanceRef mux_16))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_1
+            (joined
+              (portRef D1 (instanceRef mux_16))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_1
+            (joined
+              (portRef D0 (instanceRef mux_16))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_2
+            (joined
+              (portRef D3 (instanceRef mux_15))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_2
+            (joined
+              (portRef D2 (instanceRef mux_15))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_2
+            (joined
+              (portRef D1 (instanceRef mux_15))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_2
+            (joined
+              (portRef D0 (instanceRef mux_15))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_3
+            (joined
+              (portRef D3 (instanceRef mux_14))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_3
+            (joined
+              (portRef D2 (instanceRef mux_14))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_3
+            (joined
+              (portRef D1 (instanceRef mux_14))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_3
+            (joined
+              (portRef D0 (instanceRef mux_14))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_4
+            (joined
+              (portRef D3 (instanceRef mux_13))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_4
+            (joined
+              (portRef D2 (instanceRef mux_13))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_4
+            (joined
+              (portRef D1 (instanceRef mux_13))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_4
+            (joined
+              (portRef D0 (instanceRef mux_13))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_5
+            (joined
+              (portRef D3 (instanceRef mux_12))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_5
+            (joined
+              (portRef D2 (instanceRef mux_12))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_5
+            (joined
+              (portRef D1 (instanceRef mux_12))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_5
+            (joined
+              (portRef D0 (instanceRef mux_12))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_6
+            (joined
+              (portRef D3 (instanceRef mux_11))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_6
+            (joined
+              (portRef D2 (instanceRef mux_11))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_6
+            (joined
+              (portRef D1 (instanceRef mux_11))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_6
+            (joined
+              (portRef D0 (instanceRef mux_11))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_7
+            (joined
+              (portRef D3 (instanceRef mux_10))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_7
+            (joined
+              (portRef D2 (instanceRef mux_10))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_7
+            (joined
+              (portRef D1 (instanceRef mux_10))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_7
+            (joined
+              (portRef D0 (instanceRef mux_10))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_8
+            (joined
+              (portRef D3 (instanceRef mux_9))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net mdout0_2_8
+            (joined
+              (portRef D2 (instanceRef mux_9))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))))
+          (net mdout0_1_8
+            (joined
+              (portRef D1 (instanceRef mux_9))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))))
+          (net mdout0_0_8
+            (joined
+              (portRef D0 (instanceRef mux_9))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))))
+          (net mdout0_3_9
+            (joined
+              (portRef D3 (instanceRef mux_8))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_9
+            (joined
+              (portRef D2 (instanceRef mux_8))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_9
+            (joined
+              (portRef D1 (instanceRef mux_8))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_9
+            (joined
+              (portRef D0 (instanceRef mux_8))
+              (portRef DOA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_10
+            (joined
+              (portRef D3 (instanceRef mux_7))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_10
+            (joined
+              (portRef D2 (instanceRef mux_7))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_10
+            (joined
+              (portRef D1 (instanceRef mux_7))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_10
+            (joined
+              (portRef D0 (instanceRef mux_7))
+              (portRef DOA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_11
+            (joined
+              (portRef D3 (instanceRef mux_6))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_11
+            (joined
+              (portRef D2 (instanceRef mux_6))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_11
+            (joined
+              (portRef D1 (instanceRef mux_6))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_11
+            (joined
+              (portRef D0 (instanceRef mux_6))
+              (portRef DOA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_12
+            (joined
+              (portRef D3 (instanceRef mux_5))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_12
+            (joined
+              (portRef D2 (instanceRef mux_5))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_12
+            (joined
+              (portRef D1 (instanceRef mux_5))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_12
+            (joined
+              (portRef D0 (instanceRef mux_5))
+              (portRef DOA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_13
+            (joined
+              (portRef D3 (instanceRef mux_4))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_13
+            (joined
+              (portRef D2 (instanceRef mux_4))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_13
+            (joined
+              (portRef D1 (instanceRef mux_4))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_13
+            (joined
+              (portRef D0 (instanceRef mux_4))
+              (portRef DOA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_14
+            (joined
+              (portRef D3 (instanceRef mux_3))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_14
+            (joined
+              (portRef D2 (instanceRef mux_3))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_14
+            (joined
+              (portRef D1 (instanceRef mux_3))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_14
+            (joined
+              (portRef D0 (instanceRef mux_3))
+              (portRef DOA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_15
+            (joined
+              (portRef D3 (instanceRef mux_2))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_15
+            (joined
+              (portRef D2 (instanceRef mux_2))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_15
+            (joined
+              (portRef D1 (instanceRef mux_2))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_15
+            (joined
+              (portRef D0 (instanceRef mux_2))
+              (portRef DOA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net mdout0_3_16
+            (joined
+              (portRef D3 (instanceRef mux_1))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_16
+            (joined
+              (portRef D2 (instanceRef mux_1))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_16
+            (joined
+              (portRef D1 (instanceRef mux_1))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_16
+            (joined
+              (portRef D0 (instanceRef mux_1))
+              (portRef DOA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net addr11_ff
+            (joined
+              (portRef SD2 (instanceRef mux_0))
+              (portRef Q (instanceRef FF_0))
+              (portRef SD2 (instanceRef mux_17))
+              (portRef SD2 (instanceRef mux_16))
+              (portRef SD2 (instanceRef mux_15))
+              (portRef SD2 (instanceRef mux_14))
+              (portRef SD2 (instanceRef mux_13))
+              (portRef SD2 (instanceRef mux_12))
+              (portRef SD2 (instanceRef mux_11))
+              (portRef SD2 (instanceRef mux_10))
+              (portRef SD2 (instanceRef mux_9))
+              (portRef SD2 (instanceRef mux_8))
+              (portRef SD2 (instanceRef mux_7))
+              (portRef SD2 (instanceRef mux_6))
+              (portRef SD2 (instanceRef mux_5))
+              (portRef SD2 (instanceRef mux_4))
+              (portRef SD2 (instanceRef mux_3))
+              (portRef SD2 (instanceRef mux_2))
+              (portRef SD2 (instanceRef mux_1))))
+          (net addr10_ff
+            (joined
+              (portRef SD1 (instanceRef mux_0))
+              (portRef Q (instanceRef FF_1))
+              (portRef SD1 (instanceRef mux_17))
+              (portRef SD1 (instanceRef mux_16))
+              (portRef SD1 (instanceRef mux_15))
+              (portRef SD1 (instanceRef mux_14))
+              (portRef SD1 (instanceRef mux_13))
+              (portRef SD1 (instanceRef mux_12))
+              (portRef SD1 (instanceRef mux_11))
+              (portRef SD1 (instanceRef mux_10))
+              (portRef SD1 (instanceRef mux_9))
+              (portRef SD1 (instanceRef mux_8))
+              (portRef SD1 (instanceRef mux_7))
+              (portRef SD1 (instanceRef mux_6))
+              (portRef SD1 (instanceRef mux_5))
+              (portRef SD1 (instanceRef mux_4))
+              (portRef SD1 (instanceRef mux_3))
+              (portRef SD1 (instanceRef mux_2))
+              (portRef SD1 (instanceRef mux_1))))
+          (net mdout0_3_17
+            (joined
+              (portRef D3 (instanceRef mux_0))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net mdout0_2_17
+            (joined
+              (portRef D2 (instanceRef mux_0))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))))
+          (net mdout0_1_17
+            (joined
+              (portRef D1 (instanceRef mux_0))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))))
+          (net mdout0_0_17
+            (joined
+              (portRef D0 (instanceRef mux_0))
+              (portRef DOA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))))
+          (net dataout17
+            (joined
+              (portRef (member Q 0))
+              (portRef Z (instanceRef mux_0))))
+          (net dataout16
+            (joined
+              (portRef (member Q 1))
+              (portRef Z (instanceRef mux_1))))
+          (net dataout15
+            (joined
+              (portRef (member Q 2))
+              (portRef Z (instanceRef mux_2))))
+          (net dataout14
+            (joined
+              (portRef (member Q 3))
+              (portRef Z (instanceRef mux_3))))
+          (net dataout13
+            (joined
+              (portRef (member Q 4))
+              (portRef Z (instanceRef mux_4))))
+          (net dataout12
+            (joined
+              (portRef (member Q 5))
+              (portRef Z (instanceRef mux_5))))
+          (net dataout11
+            (joined
+              (portRef (member Q 6))
+              (portRef Z (instanceRef mux_6))))
+          (net dataout10
+            (joined
+              (portRef (member Q 7))
+              (portRef Z (instanceRef mux_7))))
+          (net dataout9
+            (joined
+              (portRef (member Q 8))
+              (portRef Z (instanceRef mux_8))))
+          (net dataout8
+            (joined
+              (portRef (member Q 9))
+              (portRef Z (instanceRef mux_9))))
+          (net dataout7
+            (joined
+              (portRef (member Q 10))
+              (portRef Z (instanceRef mux_10))))
+          (net dataout6
+            (joined
+              (portRef (member Q 11))
+              (portRef Z (instanceRef mux_11))))
+          (net dataout5
+            (joined
+              (portRef (member Q 12))
+              (portRef Z (instanceRef mux_12))))
+          (net dataout4
+            (joined
+              (portRef (member Q 13))
+              (portRef Z (instanceRef mux_13))))
+          (net dataout3
+            (joined
+              (portRef (member Q 14))
+              (portRef Z (instanceRef mux_14))))
+          (net dataout2
+            (joined
+              (portRef (member Q 15))
+              (portRef Z (instanceRef mux_15))))
+          (net dataout1
+            (joined
+              (portRef (member Q 16))
+              (portRef Z (instanceRef mux_16))))
+          (net dataout0
+            (joined
+              (portRef (member Q 17))
+              (portRef Z (instanceRef mux_17))))
+          (net datain17
+            (joined
+              (portRef (member Data 0))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain16
+            (joined
+              (portRef (member Data 1))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain15
+            (joined
+              (portRef (member Data 2))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain14
+            (joined
+              (portRef (member Data 3))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain13
+            (joined
+              (portRef (member Data 4))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain12
+            (joined
+              (portRef (member Data 5))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain11
+            (joined
+              (portRef (member Data 6))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain10
+            (joined
+              (portRef (member Data 7))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain9
+            (joined
+              (portRef (member Data 8))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net datain8
+            (joined
+              (portRef (member Data 9))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain7
+            (joined
+              (portRef (member Data 10))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain6
+            (joined
+              (portRef (member Data 11))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain5
+            (joined
+              (portRef (member Data 12))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain4
+            (joined
+              (portRef (member Data 13))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain3
+            (joined
+              (portRef (member Data 14))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain2
+            (joined
+              (portRef (member Data 15))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA2 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain1
+            (joined
+              (portRef (member Data 16))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net datain0
+            (joined
+              (portRef (member Data 17))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef DIA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))))
+          (net addr11
+            (joined
+              (portRef (member Address 0))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CSA1 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef D (instanceRef FF_0))))
+          (net addr10
+            (joined
+              (portRef (member Address 1))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CSA0 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef D (instanceRef FF_1))))
+          (net addr9
+            (joined
+              (portRef (member Address 2))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA12 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr8
+            (joined
+              (portRef (member Address 3))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA11 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr7
+            (joined
+              (portRef (member Address 4))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA10 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr6
+            (joined
+              (portRef (member Address 5))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA9 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr5
+            (joined
+              (portRef (member Address 6))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA8 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr4
+            (joined
+              (portRef (member Address 7))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA7 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr3
+            (joined
+              (portRef (member Address 8))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA6 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr2
+            (joined
+              (portRef (member Address 9))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA5 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr1
+            (joined
+              (portRef (member Address 10))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA4 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net addr0
+            (joined
+              (portRef (member Address 11))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef ADA3 (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net wren
+            (joined
+              (portRef WE)
+              (portRef A (instanceRef INV_0))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef WEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net Reset
+            (joined
+              (portRef Reset)
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef RSTA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net ClockEn
+            (joined
+              (portRef ClockEn)
+              (portRef B (instanceRef AND2_t0))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef OCEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CEA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))))
+          (net clk
+            (joined
+              (portRef Clock)
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_0_7))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_0_1_6))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_0_5))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_1_1_4))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_0_3))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_2_1_2))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_0_1))
+              (portRef CLKA (instanceRef pmi_ram_dqMnhprom_initsadn18124096p1706f143_3_1_0))
+              (portRef CK (instanceRef FF_1))
+              (portRef CK (instanceRef FF_0))))))))
+  (design pmi_ram_dqMnhprom_initsadn18124096p1706f143
+    (cellRef pmi_ram_dqMnhprom_initsadn18124096p1706f143
+      (libraryRef ORCLIB)))
+)

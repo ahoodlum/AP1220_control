@@ -1,0 +1,14 @@
+[Version]
+Version=9.2
+[Designs]
+AP1220_controller_top_post_map_timing=AP1220_controller_top_post_map_timing.adf
+[Settings]
+Active=AP1220_controller_top_post_map_timing
+[Expand]
+ap1220_controller_top_post_map_timing=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

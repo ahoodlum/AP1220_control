@@ -1,0 +1,119 @@
+[ START MERGED ]
+idx_2_.CN clk_c
+lm8_inst.counter_i[2] lm8_inst/counter[2]
+lm8_inst/uart/u_txmitt/tx_state_i[0] lm8_inst/uart/u_txmitt/tx_state[0]
+lm8_inst/LM8/rst_n_i lm8_inst/LM8/rst_n
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/dec0_wre3 lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_nxt9
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/add_sub_inv lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/add_sel_i
+lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/wren_inv_g lm8_inst/LM8/prom_enable
+[ END MERGED ]
+[ START CLIPPED ]
+GND
+SR_16_0/VCC
+SR_16_0/GND
+lm8_inst/LM8/VCC
+lm8_inst/LM8/GND
+lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/wren_inv
+lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vlo
+lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vhi
+lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vlo
+lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/VCC
+lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/scuba_vhi
+lm8_inst/uart/u_rxcver/GND
+lm8_inst/uart/u_txmitt/GND
+VCC
+count_32_bit_cry_0_COUT[29]
+un2_count_32_bit_0_N_75
+un2_count_32_bit_0_I_1_0_S0
+N_2
+un2_count_32_bit_0_I_9_0_S1
+un2_count_32_bit_0_I_9_0_S0
+un2_count_32_bit_0_I_21_0_S1
+un2_count_32_bit_0_I_21_0_S0
+un2_count_32_bit_0_I_33_0_S1
+un2_count_32_bit_0_I_33_0_S0
+un2_count_32_bit_0_I_45_0_S1
+un2_count_32_bit_0_I_45_0_S0
+un2_count_32_bit_0_I_57_0_S1
+un2_count_32_bit_0_I_57_0_S0
+un2_count_32_bit_0_I_69_0_S1
+un2_count_32_bit_0_I_69_0_S0
+un2_count_32_bit_0_I_81_0_S1
+un2_count_32_bit_0_I_81_0_S0
+un2_count_32_bit_0_I_93_0_S0
+un2_count_32_bit_0_I_93_0_COUT
+SR_16_0/un2_shift_count_cry_0_0_S1
+SR_16_0/un2_shift_count_cry_0_0_S0
+SR_16_0/N_1
+SR_16_0/un2_shift_count_s_31_0_S1
+SR_16_0/un2_shift_count_s_31_0_COUT
+lm8_inst/LM8/u1_isp8_core/GND
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsub_0/S0
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4d
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/COUT
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S0
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/N_1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_11_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_11_0_COUT
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S0
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/N_2
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_COUT
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/mem_0_0/DO2
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/mem_0_0/DO3
+lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S1
+lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S0
+lm8_inst/uart/u_rxcver/N_1
+lm8_inst/uart/u_rxcver/counter_11_s_15_0_S1
+lm8_inst/uart/u_rxcver/counter_11_s_15_0_COUT
+lm8_inst/uart/u_rxcver/cs_state12_0_N_37
+lm8_inst/uart/u_rxcver/cs_state12_0_I_1_0_S0
+lm8_inst/uart/u_rxcver/N_2
+lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S1
+lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S1
+lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S1
+lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_COUT
+lm8_inst/uart/u_txmitt/counter_cry_0_S0[0]
+lm8_inst/uart/u_txmitt/N_1
+lm8_inst/uart/u_txmitt/counter_s_0_S1[15]
+lm8_inst/uart/u_txmitt/counter_s_0_COUT[15]
+count_32_bit_cry_0_S0[0]
+N_1
+SEDSTDBY
+[ END CLIPPED ]
+[ START OSC ]
+clk_i_c 88.67
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 2.2.0.101 -- WARNING: Map write only section -- Sun Nov 10 23:42:09 2013
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
+LOCATE COMP "leds[7]" SITE "107" ;
+LOCATE COMP "leds[6]" SITE "106" ;
+LOCATE COMP "leds[5]" SITE "105" ;
+LOCATE COMP "leds[4]" SITE "104" ;
+LOCATE COMP "leds[3]" SITE "100" ;
+LOCATE COMP "leds[2]" SITE "99" ;
+LOCATE COMP "leds[1]" SITE "98" ;
+LOCATE COMP "leds[0]" SITE "97" ;
+LOCATE COMP "uart_tx" SITE "74" ;
+LOCATE COMP "uart_rx" SITE "73" ;
+FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

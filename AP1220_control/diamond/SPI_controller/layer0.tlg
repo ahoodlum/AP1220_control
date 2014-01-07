@@ -1,0 +1,46 @@
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":11:7:11:27|Synthesizing work.ap1220_controller_top.behavioral 
+@N: CD231 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":33:16:33:17|Using onehot encoding for type state_type (idle="100000")
+@W: CD749 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":189:55:189:71|Index value of type natural (or large positive integer) could be out of prefix range 0 to 4 
+@W: CD749 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":189:18:189:34|Index value of type natural (or large positive integer) could be out of prefix range 0 to 4 
+@W: CD749 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":190:19:190:35|Index value of type natural (or large positive integer) could be out of prefix range 0 to 4 
+@W: CD749 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":192:17:192:33|Index value of type natural (or large positive integer) could be out of prefix range 0 to 4 
+@W: CD749 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":194:19:194:35|Index value of type natural (or large positive integer) could be out of prefix range 0 to 4 
+@N: CD364 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":212:5:212:5|Removed redundant assignment
+@W: CG296 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":219:26:219:32|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":221:6:221:8|Referenced variable rst is not in sensitivity list
+@N: CD364 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":346:5:346:16|Removed redundant assignment
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":69:7:69:11|Signal delay is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Signal reg_0_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":84:8:84:14|Signal reg_1_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":85:8:85:14|Signal reg_2_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":86:8:86:14|Signal reg_3_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":87:8:87:14|Signal reg_4_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":88:8:88:14|Signal reg_5_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":89:8:89:14|Signal reg_6_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":90:8:90:14|Signal reg_7_i is undriven 
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\shift_reg_16_bit.vhd":5:7:5:22|Synthesizing work.shift_reg_16_bit.behavioral 
+@N: CD233 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\shift_reg_16_bit.vhd":18:22:18:23|Using sequential encoding for type shift_state_type
+Post processing for work.shift_reg_16_bit.behavioral
+Post processing for work.ap1220_controller_top.behavioral
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 0 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 1 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 2 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 3 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 4 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 5 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 6 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":83:8:83:14|Bit 7 of signal reg_0_i is floating -- simulation mismatch possible.
+@W: CL271 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":204:3:204:4|Pruning bits 7 to 4 of Q(7 downto 0) -- not in use ... 
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":361:1:361:8|Input spi_controllerslv_err of instance lm8_inst is floating
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":361:1:361:8|Input spi_controllerslv_rty of instance lm8_inst is floating
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":361:1:361:8|Input spi_controllerintr_active_high of instance lm8_inst is floating
+@W: CL271 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":329:2:329:3|Pruning bits 30 to 3 of idx(30 downto 0) -- not in use ... 
+@N: CL201 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":221:3:221:4|Trying to extract state machine for register current_state
+Extracted state machine for register current_state
+State machine has 5 reachable states with original encodings of:
+   000001
+   000010
+   000100
+   010000
+   100000
+@W: CL159 :"C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\..\firmware\AP1220_controller_top.vhd":18:3:18:6|Input miso is unused

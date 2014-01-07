@@ -1,0 +1,48 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 618R, Built Mar 14 2013 09:58:16
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+@L: C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\SPI_controller\SPI_controller_SPI_controller_scck.rpt 
+Printing clock  summary report in "C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\SPI_controller\SPI_controller_SPI_controller_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 94MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 108MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 111MB)
+
+@W: BN132 :"c:\users\andrewpc1\documents\github\ap1220_control\ap1220_control\msb\ap1220_controller\soc\../components/uart_core/rtl/verilog\txmitt.v":528:6:528:11|Removing sequential instance lm8_inst.uart.u_txmitt.genblk5.thr_ready,  because it is equivalent to instance lm8_inst.uart.u_txmitt.genblk4.thr_empty
+
+
+Clock Summary
+**************
+
+Start                                          Requested     Requested     Clock        Clock              
+Clock                                          Frequency     Period        Type         Group              
+-----------------------------------------------------------------------------------------------------------
+System                                         1.0 MHz       1000.000      system       system_clkgroup    
+AP1220_controller_top|clk_i_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
+AP1220_controller_top|clk                      1.0 MHz       1000.000      inferred     Inferred_clkgroup_1
+===========================================================================================================
+
+@W: MT529 :"c:\users\andrewpc1\documents\github\ap1220_control\ap1220_control\msb\ap1220_controller\soc\ap1220_controller.v":246:0:246:5|Found inferred clock AP1220_controller_top|clk_i_inferred_clock which controls 297 sequential elements including lm8_inst.arbiter.locked. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\andrewpc1\documents\github\ap1220_control\ap1220_control\diamond\..\firmware\shift_reg_16_bit.vhd":70:1:70:2|Found inferred clock AP1220_controller_top|clk which controls 92 sequential elements including SR_16_0.shift_count[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+syn_allowed_resources : blockrams=26  set on top level netlist AP1220_controller_top
+Finished Pre Mapping Phase.Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Nov 10 23:41:57 2013
+
+###########################################################]

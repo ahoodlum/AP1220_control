@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\firmware\AP1220_controller_top.vhd" 
+MESSAGE "Compile Entity "AP1220_controller_top"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "AP1220_controller_top"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

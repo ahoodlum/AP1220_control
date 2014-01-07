@@ -1,0 +1,49 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+AP1220_controller_top_post_map=.\AP1220_controller_top_post_map\AP1220_controller_top_post_map.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work;
+LibNames=ovi_machxo2;
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+ap1220_controller_top_post_map=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\SPI_controller\SPI_controller_SPI_controller_mapvho.vho=-1
+/ap1220_controller_top_TB.vhd=-1
+/..\..\SPI_controller\SPI_controller_SPI_controller_mapvho.sdf=-1
+[Files.Data]
+.\..\SPI_controller\SPI_controller_SPI_controller_mapvho.vho=VHDL Source Code
+.\src\ap1220_controller_top_TB.vhd=VHDL Source Code
+.\..\SPI_controller\SPI_controller_SPI_controller_mapvho.sdf=SDF File
+[sdf.ea.ap1220_controller_top_tb-TB_ARCHITECTURE]
+0=..\SPI_controller\SPI_controller_SPI_controller_mapvho.sdf| /ap1220_controller_top_tb/UUT, Average, No
+[HierarchyViewer]
+HierarchyInformation=ap1220_controller_top_tb|TB_ARCHITECTURE|0   
+ShowHide=ShowTopLevel
+Selected=

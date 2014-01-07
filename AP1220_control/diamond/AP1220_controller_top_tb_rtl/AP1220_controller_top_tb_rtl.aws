@@ -1,0 +1,14 @@
+[Version]
+Version=9.2
+[Designs]
+AP1220_controller_top_tb_rtl=AP1220_controller_top_tb_rtl.adf
+[Settings]
+Active=AP1220_controller_top_tb_rtl
+[Expand]
+ap1220_controller_top_tb_rtl=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

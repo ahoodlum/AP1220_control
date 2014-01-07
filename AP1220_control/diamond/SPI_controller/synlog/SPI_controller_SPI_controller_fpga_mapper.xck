@@ -1,0 +1,2 @@
+CKID0001:@|S:OSCInst0@|E:Q_0io[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001
+CKID0002:@|S:clk@|E:count_32_bit[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002

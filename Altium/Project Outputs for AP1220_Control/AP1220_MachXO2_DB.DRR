@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: AP1220_MachXO2_DB.PcbDoc   1/6/2014  1:56:56 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : AP1220_MachXO2_DB.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        13mil (0.3302mm)         Round          11               4.97 Inch (126.14 mm)
+T2        18mil (0.4572mm)         Round          258              42.42 Inch (1077.42 mm)
+---------------------------------------------------------------------------
+Totals                                            269              47.38 Inch (1203.57 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

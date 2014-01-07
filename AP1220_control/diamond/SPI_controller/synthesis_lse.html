@@ -1,0 +1,1688 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 2.2.0.101
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Nov 08 20:37:49 2013
+
+
+Command Line:  synthesis -f SPI_controller_SPI_controller_lattice.synproj 
+
+-- all messages logged in file synthesis.log
+
+<A name="lse_synopt"></A><B><U><big>Synthesis Options</big></U></B>
+
+INFO: Synthesis Options: (LSE-1022)
+INFO: -a option is = MachXO2
+INFO: -s option is = 4
+INFO: -t option is = TQFP144
+INFO: -d option is = LCMXO2-7000HE
+INFO: Using package TQFP144
+INFO: Using performance grade 4
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2A
+INFO: ### Device  : LCMXO2-7000HE
+INFO: ### Package : TQFP144
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: Optimization Goal = Balanced
+INFO: Top level module name = AP1220_controller_top
+INFO: Target Frequency = 200.000000 MHz
+INFO: Max Fanout = 1000
+INFO: Timing Path count = 3
+INFO: bram Utilization = 100.000000 %
+INFO: dsp usage = TRUE (default)
+INFO: dsp utilization = 100 (default)
+INFO: fsm_encoding_style = auto
+INFO: resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+INFO: Mux style = Auto
+INFO: Use Carry Chain = TRUE
+INFO: carry_chain_length = 0
+INFO: Use IO Insertion = TRUE
+INFO: Use IO Reg = TRUE
+INFO: Resource Sharing = TRUE
+INFO: Propagate Constants = TRUE
+INFO: Remove Duplicate Registers = TRUE
+INFO: force_gsr = auto
+INFO: ROM style = auto
+INFO: RAM style = auto
+INFO: -comp option is FALSE
+INFO: -syn option is FALSE
+INFO: -p C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data (searchpath added)
+INFO: -p C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond/SPI_controller (searchpath added)
+INFO: -p C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond (searchpath added)
+INFO: VHDL lib = work
+INFO: VHDL design file = C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond/../firmware/AP1220_controller_top.vhd
+INFO: VHDL design file = C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond/../firmware/shift_reg_16_bit.vhd
+INFO: Ngd file = SPI_controller_SPI_controller.ngd
+INFO: -sdc option: sdc file input not used
+INFO: -lpf option: output file option is OFF
+INFO: hardtimer checking is enabled (default); -dt option not used
+INFO: -r option is OFF [ Remove LOC Properties is OFF ]
+-- Technology check ok...MachXO, MachXO2...
+INFO: * compile design *
+
+<A name="lse_comp"></A><B><U><big>Compile Design</big></U></B>
+
+INFO: Compile Design Begin
+INFO: Top level module name = AP1220_controller_top
+INFO: ######## Missing driver on net : instructions[5].status[1], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].status[0], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[7], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[6], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[5], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[4], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[3], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[2], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[1], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_address[0], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[7], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[6], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[5], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[4], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[3], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[2], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[1], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].register_value[0], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[30], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[29], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[28], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[27], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[26], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[25], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[24], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[23], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[22], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[21], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[20], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[19], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[18], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[17], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[16], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[15], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[14], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[13], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[12], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[11], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[10], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[9], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[8], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[7], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[6], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[5], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[4], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[3], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[2], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[1], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : instructions[5].delay[0], patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1779, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1780, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1781, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1782, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1783, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1784, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1785, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1786, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1787, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1788, patching with GND... (LSE-1017)
+INFO: ######## Missing driver on net : n1789, patching with GND... (LSE-1017)
+
+Extracted state machine for register: current_state
+State machine has 8 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 000 -> 00000001
+ 001 -> 00000010
+ 010 -> 00000100
+ 011 -> 00001000
+ 100 -> 00010000
+ 101 -> 00100000
+ 110 -> 01000000
+ 111 -> 10000000
+ Number of Reachable States for this State Machine are 5 
+
+
+
+WARNING: Bit 0 of Register current_state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 1 of Register current_state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 2 of Register current_state_FSM is stuck at Zero (VDB-5010)
+INFO: Combinational loop found : 1
+INFO: 	Net idx[30] 
+INFO: 	Instance mux_72_i31 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 2
+INFO: 	Net idx[29] 
+INFO: 	Instance mux_72_i30 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 3
+INFO: 	Net idx[28] 
+INFO: 	Instance mux_72_i29 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 4
+INFO: 	Net idx[27] 
+INFO: 	Instance mux_72_i28 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 5
+INFO: 	Net idx[26] 
+INFO: 	Instance mux_72_i27 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 6
+INFO: 	Net idx[25] 
+INFO: 	Instance mux_72_i26 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 7
+INFO: 	Net idx[24] 
+INFO: 	Instance mux_72_i25 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 8
+INFO: 	Net idx[23] 
+INFO: 	Instance mux_72_i24 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 9
+INFO: 	Net idx[22] 
+INFO: 	Instance mux_72_i23 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 10
+INFO: 	Net idx[21] 
+INFO: 	Instance mux_72_i22 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 11
+INFO: 	Net idx[20] 
+INFO: 	Instance mux_72_i21 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 12
+INFO: 	Net idx[19] 
+INFO: 	Instance mux_72_i20 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 13
+INFO: 	Net idx[18] 
+INFO: 	Instance mux_72_i19 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 14
+INFO: 	Net idx[17] 
+INFO: 	Instance mux_72_i18 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 15
+INFO: 	Net idx[16] 
+INFO: 	Instance mux_72_i17 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 16
+INFO: 	Net idx[15] 
+INFO: 	Instance mux_72_i16 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 17
+INFO: 	Net idx[14] 
+INFO: 	Instance mux_72_i15 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 18
+INFO: 	Net idx[13] 
+INFO: 	Instance mux_72_i14 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 19
+INFO: 	Net idx[12] 
+INFO: 	Instance mux_72_i13 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 20
+INFO: 	Net idx[11] 
+INFO: 	Instance mux_72_i12 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 21
+INFO: 	Net idx[10] 
+INFO: 	Instance mux_72_i11 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 22
+INFO: 	Net idx[9] 
+INFO: 	Instance mux_72_i10 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 23
+INFO: 	Net idx[8] 
+INFO: 	Instance mux_72_i9 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 24
+INFO: 	Net idx[7] 
+INFO: 	Instance mux_72_i8 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 25
+INFO: 	Net idx[6] 
+INFO: 	Instance mux_72_i7 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 26
+INFO: 	Net idx[5] 
+INFO: 	Instance mux_72_i6 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 27
+INFO: 	Net idx[4] 
+INFO: 	Instance mux_72_i5 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 28
+INFO: 	Net idx[3] 
+INFO: 	Instance mux_72_i4 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 29
+INFO: 	Net n785 
+INFO: 	Instance add_49 
+INFO: 	Net idx[2] 
+INFO: 	Instance mux_72_i3 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 30
+INFO: 	Net n3541 
+INFO: 	Instance i337 
+INFO: 	Net n828 
+INFO: 	Instance \i543/i3/i2 
+INFO: 	Net n1147 
+INFO: 	Instance i602 
+INFO: 	Net n3289 
+INFO: 	Instance i570 
+INFO: 	Net idx[2] 
+INFO: 	Instance mux_72_i3 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: 	Net n2423 
+INFO: 	Instance i548 
+INFO: 	Net n2421 
+INFO: 	Instance i546 
+INFO: Combinational loop found : 31
+INFO: 	Net idx[2] 
+INFO: 	Instance mux_72_i3 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: 	Net n2423 
+INFO: 	Instance i548 
+INFO: 	Net n2010 
+INFO: 	Instance i334 
+INFO: 	Net count_target[8] 
+INFO: 	Instance mux_614_i7 
+INFO: 	Net n2619 
+INFO: 	Instance mux_613_i7 
+INFO: 	Net n707 
+INFO: 	Instance \i433/i3/i2 
+INFO: Combinational loop found : 32
+INFO: 	Net idx[1] 
+INFO: 	Instance mux_72_i2 
+INFO: 	Net n786 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 33
+INFO: 	Net idx[0] 
+INFO: 	Instance mux_72_i1 
+INFO: 	Net n787 
+INFO: 	Instance add_49 
+INFO: 	Net n786 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 34
+INFO: 	Net n3289 
+INFO: 	Instance i570 
+INFO: 	Net \i433/i3/n4 
+INFO: 	Instance \i433/i3/i1 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: 	Net n2423 
+INFO: 	Instance i548 
+INFO: 	Net n2010 
+INFO: 	Instance i334 
+INFO: 	Net count_target[8] 
+INFO: 	Instance mux_614_i7 
+INFO: 	Net n2619 
+INFO: 	Instance mux_613_i7 
+INFO: 	Net n707 
+INFO: 	Instance \i433/i3/i2 
+INFO: 	Net \mux_169_Mux_5/n1 
+INFO: 	Instance i598 
+INFO: 	Net n787 
+INFO: 	Instance add_49 
+INFO: Combinational loop found : 35
+INFO: 	Net n828 
+INFO: 	Instance \i543/i3/i2 
+INFO: 	Net n1147 
+INFO: 	Instance i602 
+INFO: 	Net n2493 
+INFO: 	Instance i572 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: 	Net n2423 
+INFO: 	Instance i548 
+INFO: 	Net n2010 
+INFO: 	Instance i334 
+INFO: 	Net count_target[8] 
+INFO: 	Instance mux_614_i7 
+INFO: 	Net n2619 
+INFO: 	Instance mux_613_i7 
+INFO: 	Net n2571 
+INFO: 	Instance i590 
+INFO: 	Net n2017 
+INFO: 	Instance i341 
+INFO: Combinational loop found : 36
+INFO: 	Net n754 
+INFO: 	Instance equal_48 
+INFO: 	Net n1147 
+INFO: 	Instance i602 
+INFO: 	Net n2493 
+INFO: 	Instance i572 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: 	Net n2423 
+INFO: 	Instance i548 
+INFO: 	Net n2010 
+INFO: 	Instance i334 
+INFO: 	Net count_target[8] 
+INFO: 	Instance mux_614_i7 
+INFO: 	Net n2619 
+INFO: 	Instance mux_613_i7 
+INFO: 	Net n2571 
+INFO: 	Instance i590 
+INFO: 	Net n2017 
+INFO: 	Instance i341 
+INFO: Combinational loop found : 37
+INFO: 	Net n1147 
+INFO: 	Instance i602 
+INFO: 	Net n757 
+INFO: 	Instance add_49 
+INFO: 	Net n758 
+INFO: 	Instance add_49 
+INFO: 	Net n759 
+INFO: 	Instance add_49 
+INFO: 	Net n760 
+INFO: 	Instance add_49 
+INFO: 	Net n761 
+INFO: 	Instance add_49 
+INFO: 	Net n762 
+INFO: 	Instance add_49 
+INFO: 	Net n763 
+INFO: 	Instance add_49 
+INFO: 	Net n764 
+INFO: 	Instance add_49 
+INFO: 	Net n765 
+INFO: 	Instance add_49 
+INFO: 	Net n766 
+INFO: 	Instance add_49 
+INFO: 	Net n767 
+INFO: 	Instance add_49 
+INFO: 	Net n768 
+INFO: 	Instance add_49 
+INFO: 	Net n769 
+INFO: 	Instance add_49 
+INFO: 	Net n770 
+INFO: 	Instance add_49 
+INFO: 	Net n771 
+INFO: 	Instance add_49 
+INFO: 	Net n772 
+INFO: 	Instance add_49 
+INFO: 	Net n773 
+INFO: 	Instance add_49 
+INFO: 	Net n774 
+INFO: 	Instance add_49 
+INFO: 	Net n775 
+INFO: 	Instance add_49 
+INFO: 	Net n776 
+INFO: 	Instance add_49 
+INFO: 	Net n777 
+INFO: 	Instance add_49 
+INFO: 	Net n778 
+INFO: 	Instance add_49 
+INFO: 	Net n779 
+INFO: 	Instance add_49 
+INFO: 	Net n780 
+INFO: 	Instance add_49 
+INFO: 	Net n781 
+INFO: 	Instance add_49 
+INFO: 	Net n782 
+INFO: 	Instance add_49 
+INFO: 	Net n783 
+INFO: 	Instance add_49 
+INFO: 	Net n784 
+INFO: 	Instance add_49 
+INFO: 	Net n2423 
+INFO: 	Instance i548 
+INFO: 	Net n2010 
+INFO: 	Instance i334 
+INFO: 	Net count_target[7] 
+INFO: 	Instance mux_614_i6 
+INFO: 	Net n2620 
+INFO: 	Instance mux_613_i6 
+INFO: 	Net n2369 
+INFO: 	Instance \i495/i3/i2 
+INFO: GSR Instance connected to net: n4335 (LSE-1149)
+WARNING: No lpf file will be written because -lpf option is not used or set to 0
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+INFO: Results of ngd drc checks are available in AP1220_controller_top_drc.log
+INFO: All blocks are expanded and NGD expansion is successful
+INFO: Writing ngd file SPI_controller_SPI_controller.ngd
+
+################### Begin Area Report (AP1220_controller_top)######################
+Number of register bits => 88 of 6864 (1 % )
+CCU2D => 41
+FD1P3AX => 47
+FD1P3IX => 31
+FD1P3JX => 1
+FD1S3AX => 1
+FD1S3BX => 1
+FD1S3DX => 4
+FD1S3IX => 1
+FD1S3JX => 1
+GSR => 1
+IB => 2
+LUT4 => 81
+OB => 1
+OBZ => 11
+OFS1P3DX => 1
+PFUMX => 3
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : n11, loads : 56
+  Net : clk_c, loads : 33
+Clock Enable Nets
+Number of Clock Enables: 4
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n5970, loads : 32
+  Net : n4340, loads : 32
+  Net : do_count, loads : 31
+  Net : n787, loads : 22
+  Net : n4836, loads : 20
+  Net : n785, loads : 19
+  Net : n155_adj_1, loads : 17
+  Net : shift_state, loads : 14
+  Net : idx_1, loads : 13
+  Net : n786, loads : 13
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|   42.646 MHz|    15 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 82.270  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.451  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+project -fileorder "C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond/../firmware/shift_reg_16_bit.vhd" "C:/Users/AndrewPC1/Documents/GitHub/AP1220_control/AP1220_control/diamond/../firmware/AP1220_controller_top.vhd" 

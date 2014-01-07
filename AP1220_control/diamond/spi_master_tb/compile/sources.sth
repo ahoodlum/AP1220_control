@@ -1,0 +1,10 @@
+[Files List]
+C:\lscc\diamond\2.2_x64\active-hdl\vlib\std\src\standard.vhd=S
+C:\lscc\diamond\2.2_x64\active-hdl\vlib\std\src\textio.vhd=S
+C:\lscc\diamond\2.2_x64\active-hdl\vlib\ieee\src\std_logic_1164.vhdl=S
+C:\lscc\diamond\2.2_x64\active-hdl\vlib\ieee\src\std_logic_1164-body.vhdl=S
+C:\lscc\diamond\2.2_x64\active-hdl\vlib\ieee\src\numeric_std.vhdl=S
+C:\lscc\diamond\2.2_x64\active-hdl\vlib\ieee\src\numeric_std-body.vhdl=S
+C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\firmware\shift_reg_16_bit.vhd=S
+C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\firmware\SPI_master.vhd=S
+C:\Users\AndrewPC1\Documents\GitHub\AP1220_control\AP1220_control\diamond\spi_master_tb\src\TestBench\spi_master_TB.vhd=S
